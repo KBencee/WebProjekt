@@ -1,0 +1,70 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+}
+
+.doboz{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 170px;
+    left: 170px;
+    transform-style: preserve-3d;
+    animation: doboz 5s infinite linear;
+}
+
+.doboz .kocka{
+    height: 100px;
+    width: 100px;
+    font-size: 90px;
+    background-color: gray;
+    text-align: center;
+    position: absolute;
+}
+
+.doboz #kocka-1{
+    right: 50px;
+    transform: rotateY(-90deg);
+}
+
+.doboz #kocka-2{
+    left: 50px;
+    transform: rotateY(90deg);
+}
+
+.doboz #kocka-3{
+    top: 50px;
+    transform: rotateX(90deg);
+}
+
+.doboz #kocka-4{
+    bottom: 50px;
+    transform: rotateX(-90deg);
+}
+
+.doboz #kocka-5{
+    transform: translateZ(-50deg) rotateY(180deg);
+}
+
+.doboz #kocka-6{
+    transform: translateZ(50deg);
+}
+
+@keyframes doboz{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(359deg);
+    }
+}
