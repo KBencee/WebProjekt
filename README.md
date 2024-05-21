@@ -1,2 +1,3 @@
 # WebProjekt
-Animáció CSS segítségével
+- Animáció CSS segítségével
+- Készítette: Kiss Bence
