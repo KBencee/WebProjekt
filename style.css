@@ -33,7 +33,7 @@ body{
     top: 170px;
     left: 170px;
     transform-style: preserve-3d;
-    animation: doboz 5s infinite linear;
+    animation: doboz 10s infinite linear;
 }
 
 .doboz .kocka{
